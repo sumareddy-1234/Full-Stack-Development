@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Types Of CSS</title>
+        <!--External CSS-->
+        <link rel="stylesheet" href="CSS_Day1.css"/>
+        <!--Internal CSS-->
+        <style>
+            h1{
+                color:red;
+                background-color:pink;
+            }
+            p{
+                font-size: 30px;
+                background-color: blueviolet;
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: blue;">Inline CSS:</h1>
+        <p>The style that can directly apply to the tag.</p>
+        <!--h1 is block level element-->
+        <h3 style="color:aqua;background-color: black;">My page</h3>
+        <p>The background-color for the block level element takes entire width of the window.</p>
+        <!--strong is inline element-->
+        <strong style="background-color: blue;font-size: 50px;font-weight: 700;">HI</strong>
+        <bold style="background-color: pink;">BYE</bold>
+        <p>The background-color for the inline element takes the width of the content.</p>
+        <h1>Internal CSS:</h1>
+        <p>The style can be applied in the head section by using selectors like tag selector,class selector or ID selector.</p>
+        <h2>External CSS:</h2>
+        <p>Create a CSS file and apply External CSS in that CSS file.<br/>Then integrate External CSS from CSS file to the HTML File by using link tag.<br/>link tag has two attributes relation(rel) for integration purpose and hyper reference(href) to provide the path.</p>
+        <h1>Priority:</h1>
+        <p>Inline CSS has First Priority.<br/>Internal CSS or External CSS has Second priority based on the alignment.<br/><u>Note:</u> <b>!important</b> has most priority if it is used with CSS Types.</p>
+    </body>
+</html>

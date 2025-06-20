@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background: linear-gradient(#10002b, #240046, #3c096c, #5a189a, #7b2cbf, #3c096c);
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffe066;
+  text-shadow: 2px 2px #000;
+}
+
+.road-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.milestone {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-left: 5px solid #ffe066;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  width: 60%;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.milestone:hover {
+  transform: scale(1.03);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.milestone.left {
+  left: 0;
+  margin-left: 0;
+}
+
+.milestone.right {
+  margin-left: auto;
+  border-left: none;
+  border-right: 5px solid #ffe066;
+}
+
+.milestone h3 {
+  margin-top: 0;
+  color: #ffe066;
+  text-shadow: 1px 1px #000;
+}
+
+.board-label {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 3rem 0 1rem;
+  color: #ffd166;
+  background: rgba(0,0,0,0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.connector {
+  width: 3px;
+  height: 80px;
+  background-color: #ffe066;
+  margin: 0 auto;
+}
+
+.road-end {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffe066;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .milestone {
+    width: 90%;
+  }
+
+  .milestone.right {
+    margin-left: 0;
+    border-left: 5px solid #ffe066;
+    border-right: none;
+  }
+}

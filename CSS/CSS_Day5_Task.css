@@ -1,0 +1,50 @@
+.border1{
+    border:2px dashed green;
+    width: 100px;
+    height: 100px;
+}
+.border2{
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+}
+.border3{
+    border-top:2px;
+    border-top-style: ridge;
+    border-top-color:blueviolet;
+    border-bottom: 2px;
+    border-bottom-style: dashed;
+    border-color: aquamarine;
+    border-left: 3px;
+    border-left-style: dotted;
+    border-left-color: blue;
+    border-right-width: 3px;
+    border-right-style:double;
+    border-right-color: brown;
+    border-radius: 10px;
+    width: 100px;
+}
+.border4{
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-style: groove;
+    border-color: blueviolet;
+    width: 100px;
+}
+.border5{
+    border-radius: 100%;
+    border-color: blue;
+    border-style: dotted;
+    width: 100px;
+}
+.square{
+    width: 200px;
+    height: 200px;
+    border: 2px groove red;
+}
+.circle{
+    border:2px dashed green;
+    width:50%;
+    height:50%;
+    border-radius:200px;
+}

@@ -1,0 +1,22 @@
+.para-1{
+    text-decoration-color: blueviolet;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
+    color:blue;
+}
+.para-2{
+    text-decoration: line-through #ff0000 dashed 3px;
+}
+.para-3{
+    text-decoration-color: palevioletred;
+    text-decoration-line: overline;
+    text-decoration-thickness: 1px;
+    color:blue;
+}
+.para-4{
+    text-decoration: dotted #00ff00 underline 3px;
+}
+.para-5{
+    text-decoration: underline #0000ff double 3px;
+}

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Transitions</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column-reverse;
+            }
+            .box{
+                width:100px;
+                height:100px;
+                background-color: red;
+                transition-property: width;
+                transition-duration: 3s;
+                transition-timing-function: linear;
+                transition-delay: 1s;
+                margin: 20px;
+            }
+            .box:hover{
+                width:200px;
+                height: 200px;
+            }
+            .box1{
+                width:100px;
+                height:100px;
+                background-color: red;
+                transition: all 3s ease-in-out 1s;
+            }
+            .box1:hover{
+                height:200px;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <div class="box1"></div>
+    </body>
+</html>

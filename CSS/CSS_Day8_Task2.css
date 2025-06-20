@@ -1,0 +1,25 @@
+.goldenday{
+    color:green;
+    background-color: rgb(60, 7, 110);
+    text-align: right;
+    width: 200px;
+    height:250px;
+    position:relative;
+    bottom:250px;
+    left:300px;
+}
+.fan{
+    color:purple;
+    background-color: white;
+    position:relative;
+    width: 200px;
+    height:250px;
+    bottom:522px;
+    left:500px;
+}
+body{
+    width:700px;
+    height:250px;
+    border:5px solid white;
+    background-color: black;
+}

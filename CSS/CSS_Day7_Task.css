@@ -1,0 +1,419 @@
+@keyframes bodycolor{
+  from{
+    background:linear-gradient(skyblue,transparent);
+  }
+  to{
+    background:linear-gradient(black,#2c2c2c);
+  }
+}
+body{
+  animation-name: bodycolor;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+/*@keyframes moonlight{
+  0%{
+    box-shadow:0px 0px 0px 0px white;
+  }
+  30%{
+    box-shadow:0px 0px 75px 15px whitesmoke;
+  }
+  50%{
+    box-shadow: 0px 0px 75px 20px whitesmoke;
+  }
+  100%{
+    box-shadow: 0px 0px 70px 30px whitesmoke;
+  }
+}*/
+/*@keyframes shinetolight{
+  from{
+    box-shadow: 0px 0px 30px 30px orangered;
+    background-color: yellow;
+  }
+  to{
+    box-shadow: 0px 0px 70px 30px whitesmoke;
+    background-color: white;
+  }
+}*/
+@keyframes shinetolight{
+  0%{
+    box-shadow:0px 0px 0px 0px orangered;
+    background-color: yellow;
+    top: 40px;
+    right: 300px;
+  }
+  20%{
+    box-shadow:0px 0px 25px 15px orangered;
+    background-color: yellow;
+    top: 40px;
+    right: 300px;
+  }
+  40%{
+    box-shadow: 0px 0px 20px 20px orangered;
+    background-color: yellow;
+    top: 40px;
+    right: 300px;
+  }
+  50%{
+    box-shadow: 0px 0px 30px 30px orangered;
+    background-color: yellow;
+    top: 40px;
+    right: 300px;
+  }
+  70%{
+    box-shadow:0px 0px 0px 0px white;
+    background-color: white;
+    top: 40px;
+    left: 300px;
+  }
+  80%{
+    box-shadow:0px 0px 75px 15px whitesmoke;
+    background-color: white;
+    top: 40px;
+    left: 300px;
+  }
+  90%{
+    box-shadow: 0px 0px 75px 20px whitesmoke;
+    background-color: white;
+    top: 40px;
+    left: 300px;
+  }
+  100%{
+    box-shadow: 0px 0px 70px 30px whitesmoke;
+    background-color: white;
+    top:40px;
+    left:300px;
+  }
+}
+.suntomoon{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  /*top: 40px;
+  right: 300px;*/
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-name: shinetolight;
+}
+/*.moon {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 40px;
+    right: 300px;
+    animation-name: moonlight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}*/
+
+/*@keyframes sunshine{
+  0%{
+    box-shadow:0px 0px 0px 0px orangered;
+  }
+  30%{
+    box-shadow:0px 0px 25px 15px orangered;
+  }
+  50%{
+    box-shadow: 0px 0px 20px 20px orangered;
+  }
+  100%{
+    box-shadow: 0px 0px 30px 30px orangered;
+  }
+}*/
+/*sun {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 100%;
+    position: absolute;
+    top: 40px;
+    right: 300px;
+    animation-name: sunshine;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}*/
+
+.road {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+
+.line1 {
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    left: 95px;
+}
+.line2 {
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    left: 200px;
+}
+.line3 {
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    left: 300px;
+}
+.line4 {
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    left: 400px;
+}
+.line5{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    left: 500px;
+}
+.line6{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    left: 600px;
+}
+.line7{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    left: 700px;
+}
+.line8{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    left: 800px;
+}
+.line9{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    left: 900px;
+}
+.line10{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    right: 100px;
+}
+.line11{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    right: 200px;
+}
+.line12{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    right: 300px;
+}
+.line13{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    right: 400px;
+}
+.line14{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    right: 500px;
+}
+.line15{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    right: 600px;
+}
+.line16{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 56px;
+    right: 700px;
+}
+@keyframes mycar{
+  from{
+    right:0px;
+  }
+  to{
+    left:0px;
+  }
+}
+
+.car {
+  position: absolute;
+  bottom: 160px;
+  left: 1200px;
+  width: 200px;
+  height: 80px;
+  z-index: 1;
+  animation:mycar 2s linear 1s infinite reverse;
+}
+
+.car-body {
+  width: 200px;
+  height: 50px;
+  background-color: crimson;
+  border-radius: 15px 15px 10px 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.car-top {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: -5px;
+  left: 50px;
+  border-radius: 10px;
+  z-index:1;
+}
+
+.headlight {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  bottom: 30px;
+}
+
+.wheel1{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15px;
+  left: 25px;
+}
+
+.wheel2{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15px;
+  right: 25px;
+}
+
+
+.leaf1, .leaf2, .leaf3 {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+}
+
+
+.leaf1 {
+  top: 0px;
+  left: 15px;
+}
+
+.leaf2 {
+  top: 20px;
+  left: 0px;
+}
+
+.leaf3 {
+  top: 20px;
+  left: 30px;
+}
+
+
+.trunk {
+  width: 20px;
+  height: 60px;
+  background-color: brown;
+  position: absolute;
+  top: 65px;
+  left: 30px;
+}
+
+.tree1 {
+  position: absolute;
+  left: 100px;
+  bottom: 150px;
+  width: 80px;
+  height: 125px;
+}
+
+.tree2 {
+  position: absolute;
+  left: 230px;
+  bottom: 150px;
+  width: 80px;
+  height: 125px;
+}
+.window1 {
+  width: 50px;
+  height: 40px;
+  background-color: blue;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-bottom-right-radius: 10px;
+  border:3px solid red;
+  border-top-left-radius: 30px;
+}
+.window2 {
+  width: 50px;
+  height: 40px;
+  background-color: blue;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  border-bottom-left-radius: 10px;
+  border:3px solid red;
+  border-top-right-radius: 30px;
+}

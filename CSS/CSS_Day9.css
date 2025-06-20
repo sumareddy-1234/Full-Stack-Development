@@ -1,0 +1,48 @@
+.linear{
+    height:200px;
+    width:200px;
+    background-image: linear-gradient(to bottom right,orange,blue,green);
+}
+.radial{
+    height:200px;
+    width:200px;
+    background-image: radial-gradient(orange,blue 30%,green 60%);
+}
+.repeating-radial{
+    height:200px;
+    width:200px;
+    background-image: repeating-radial-gradient(orange 5%,blue 10%,green 15%);
+    border-radius: 50%;
+}
+.conic-gradient{
+    height:200px;
+    width:200px;
+    background-image: conic-gradient(at 60% 50%,orange ,blue ,green,red);
+    border-radius: 50%;
+}
+.multiplelinear{
+    height:200px;
+    width:200px;
+    background:linear-gradient(to bottom,red,green,transparent),linear-gradient(to right,green,yellow,red);
+}
+.repeating-linear{
+    height:200px;
+    width:200px;
+    background-image: repeating-linear-gradient(to bottom,orange 5%,blue 10%,green 15%);
+    border-radius: 50%;
+}
+.shadow1{
+    width: 100px;
+    height:100px;
+    border:2px solid black;
+    box-shadow:10px 30px 15px 5px black;
+}
+.shadow2{
+    position:relative;
+    bottom:0px;
+    width:350px;
+    height:350px;
+    box-shadow: 0px 0px 25px 5px rgb(231, 115, 7);
+    border-radius: 50%;
+    background-color: rgb(242,181,15);
+}

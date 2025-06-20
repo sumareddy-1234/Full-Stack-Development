@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solar System</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-image: url(./images/5438849.jpg);
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-position: center;
+                background-size: cover;
+                overflow: scroll;
+                height:300vh;
+                width: 300vh;
+                flex-wrap: wrap;
+                flex-direction: column;
+                background-repeat:repeat;
+            }
+            .sun{
+                width:100px;
+                height:100px;
+                border-radius: 50%;
+            }
+            .firstorbit,.secondorbit,.thirdorbit,.fourthorbit,.fifthorbit,.sixthorbit,.seventhorbit,.eightorbit{
+                border-radius: 50%;
+                box-shadow: 0px 0px 5px 3px white;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+            .firstorbit{
+                width:400px;
+                height:400px;
+            }
+            .secondorbit{
+                width: 600px;
+                height: 600px;
+            }
+            .thirdorbit{
+                width:800px;
+                height:800px;
+            }
+            .fourthorbit{
+                width:1000px;
+                height:1000px;
+            }
+            .fifthorbit{
+                width:1200px;
+                height:1200px;
+            }
+            .sixthorbit{
+                width:1400px;
+                height:1400px;
+            }
+            .seventhorbit{
+                width:1600px;
+                height:1600px;
+            }
+            .eightorbit{
+                width:1800px;
+                height:1800px;
+            }
+            .mercury{
+                animation: mercuryanimation 3s linear infinite reverse ;
+                border-radius: 50%;
+                position: absolute;
+                left:150px;
+            }
+            .venus{
+                border-radius: 50%;
+                position: absolute;
+                left:250px;
+                animation: venusanimation 5s linear infinite reverse ;
+            }
+            .earth{
+                border-radius: 50%;
+                position: absolute;
+                left:350px;
+                animation: earthanimation 10s linear infinite reverse ;
+            }
+            .mars{
+                border-radius: 50%;
+                position: absolute;
+                left:450px;
+                animation: marsanimation 16s linear infinite reverse ;
+            }
+            .jupyter{
+                border-radius: 50%;
+                position: absolute;
+                left:550px;
+                animation: jupyteranimation 18s linear infinite reverse ;
+            }
+            .saturn{
+                border-radius: 50%;
+                position: absolute;
+                left:650px;
+                animation: saturnanimation 22s linear infinite reverse ;
+            }
+            .uranusplanet{
+                border-radius: 50%;
+                position: absolute;
+                left:750px;
+                animation: uranusanimation 24s linear infinite reverse ;
+            }
+            .neptune{
+                border-radius: 50%;
+                position: absolute;
+                left:850px;
+                animation: neptuneanimation 28s linear infinite reverse ;
+            }
+            @keyframes neptuneanimation{
+                0%{
+                    transform:rotateZ(0deg) translateX(900px);
+                }
+                100%{
+                    transform:rotateZ(360deg) translateX(900px);
+                }
+            }
+            @keyframes uranusanimation{
+                0%{
+                    transform:rotateZ(0deg) translateX(800px);
+                }
+                100%{
+                    transform:rotateZ(360deg) translateX(800px);
+                }
+            }
+            @keyframes saturnanimation{
+                0%{
+                    transform:rotateZ(0deg) translateX(700px);
+                }
+                100%{
+                    transform:rotateZ(360deg) translateX(700px);
+                }
+            }
+            @keyframes jupyteranimation{
+                0%{
+                    transform:rotateZ(0deg) translateX(600px);
+                }
+                100%{
+                    transform:rotateZ(360deg) translateX(600px);
+                }
+            }
+            @keyframes marsanimation{
+                0%{
+                    transform:rotateZ(0deg) translateX(500px);
+                }
+                100%{
+                    transform:rotateZ(360deg) translateX(500px);
+                }
+            }
+            @keyframes earthanimation{
+                0%{
+                    transform:rotateZ(0deg) translateX(400px);
+                }
+                100%{
+                    transform:rotateZ(360deg) translateX(400px);
+                }
+            }
+            @keyframes venusanimation{
+                0%{
+                    transform:rotateZ(0deg) translateX(300px);
+                }
+                100%{
+                    transform:rotateZ(360deg) translateX(300px);
+                }
+            }
+            @keyframes mercuryanimation{
+                0%{
+                    transform:rotateZ(0deg) translateX(200px);
+                }
+                100%{
+                    transform:rotateZ(360deg) translateX(200px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://en.wikipedia.org/wiki/Solar_System" target="_blank" ><h1 style="margin:90px;color: white;font-size: 50px;text-decoration: none;">Solar System</h1></a>
+        <div class="eightorbit">
+            <img class="neptune" src="./images/neptune.jpg" height="100" width="100" alt="neptune"/>
+            <div class="seventhorbit">
+                <img class="uranusplanet" src="./images/uranus.jpg" height="100" width="100" alt="uranus"/>
+                <div class="sixthorbit">
+                    <img class="saturn" src="./images/saturn.jpg" height="100" width="100"/>
+                    <div class="fifthorbit">
+                        <img class="jupyter" src="./images/jupyter.jpg" height="100" width="100"/>
+                        <div class="fourthorbit">
+                            <img class="mars" src="./images/mars.jpg" height="100" width="100"/>
+                            <div class="thirdorbit">
+                                <img class="earth" src="./images/earth.jpg" height="100" width="100"/>
+                                <div class="secondorbit">
+                                    <img class="venus" src="./images/venus.jpg" height="100" width="100"/>
+                                    <div class="firstorbit">
+                                        <img class="sun" src="./images/sun.jpg" height="100" width="100"/>
+                                        <img class="mercury" src="./images/mercury.jpg" alt="mercury" height="100" width="100"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

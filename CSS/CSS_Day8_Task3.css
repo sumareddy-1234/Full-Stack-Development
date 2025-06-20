@@ -1,0 +1,346 @@
+.head{
+    height:150px;
+    width:100px;
+    position:relative;
+    left:700px;
+}
+.cap{
+    position:absolute;
+    top:0px;
+    width:100px;
+    height:100px;
+    background-color: black;
+    border-radius: 50%;
+}
+.face{
+    position:absolute;
+    top:20px;
+    width:100px;
+    height:100px;
+    background-color: wheat;
+    border-radius:50%;
+    z-index:1;
+    box-shadow:0px 0px 25px 5px black;
+}
+.neck{
+    position:absolute;
+    width:30px;
+    height:35px;
+    top:115px;
+    left:35px;
+    background-color: wheat;
+}
+.eyes{
+    position:relative;
+    top:20px;
+    width:80px;
+    height:20px;
+    left:10px;
+    top:20px;
+}
+.eye1{
+    position:absolute;
+    top:10px;
+    width:30px;
+    height:20px;
+    border:3px solid black;
+    border-radius: 100%;
+    background-color: white;
+}
+.eye2{
+    position:absolute;
+    top:10px;
+    width:30px;
+    height:20px;
+    border:3px solid black;
+    border-radius: 100%;
+    left:45px;
+    background-color: white;
+}
+.pupil1,.pupil2{
+    position:absolute;
+    top:5px;
+    width:10px;
+    height:10px;
+    border:3px solid black;
+    border-radius:100%;
+    bottom:0px;
+    background-color: black;
+}
+.nose{
+    position:relative;
+    top:30px;
+    left:45px;
+    width:3px;
+    height:15px;
+    border: 3px solid black;
+}
+.mouth{
+    position:relative;
+    top:35px;
+    left:35px;
+    width:20px;
+    height:5px;
+    border:3px solid black;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.mainbody{
+    width:150px;
+    height: 250px;
+    background-color: aqua;
+    position:relative;
+    top:0px;
+    left:675px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow:0px 0px 25px 5px black;
+}
+.shirt{
+    position:absolute;
+    width:150px;
+    height: 150px;
+    top:0px;
+}
+.shirt-half1,.shirt-half2{
+    position:absolute;
+    width:70px;
+    height:150px;
+    top:0px;
+    border:3px solid aqua;
+    background-color: blueviolet;
+}
+.shirt-half1{
+    border-top-left-radius: 30%;
+}
+.shirt-half2{
+    left:75px;
+    border-top-right-radius: 30%;
+}
+.buttons{
+    position:absolute;
+    left:70px;
+    top:0px;
+    width: 10px;
+    height: 155px;
+    background-color: aqua;
+    border-radius: 10px;
+    z-index:1;
+}
+.button1{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+.button2{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.button3{
+    position:absolute;
+    left:0px;
+    bottom:30px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.button4{
+    position:absolute;
+    left:0px;
+    bottom:60px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.button5{
+    position:absolute;
+    left:0px;
+    bottom:90px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.button6{
+    position:absolute;
+    left:0px;
+    top:30px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.pocket{
+    position:absolute;
+    width:30px;
+    height: 30px;
+    background-color: aquamarine;
+    top:20px;
+    left:20px;
+    border-radius: 10px;
+}
+.pocketspace{
+    position:absolute;
+    width:25px;
+    height: 50%;
+    background-color: aqua;
+    bottom:0px;
+    left:0px;
+    border:3px solid black;
+}
+.bottom{
+    position:relative;
+    bottom:-160px;
+    width:150px;
+    height: 120px;
+    background-color: green;
+}
+.bottom-half1,.bottom-half2{
+    position:absolute;
+    width:70px;
+    height:120px;
+    background-color: blueviolet;
+    border: 3px solid aqua;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.bottom-half1{
+    left:0px;  
+}
+.bottom-half2{
+    right:0px;
+}
+.legs{
+     width:150px;
+    height: 100px;
+    position:relative;
+    background-color: white;
+    top:0px;
+    left:675px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.leg1,.leg2{
+    position:absolute;
+    top:0px;
+    background-color: wheat;
+    width:50px;
+    height: 50px;
+    border:1px solid black;
+}
+.leg1{
+    left:10px;
+}
+.leg2{
+    right:10px;
+}
+.socks{
+    width:150px;
+    height: 150px;
+    position:relative;
+    top:0px;
+}
+.sock1,.sock2{
+    position:absolute;
+    top:0px;
+    background-color: aqua;
+    width:50px;
+    height: 50px;
+    border:1px solid black;
+}
+.sock1{
+    left:10px;
+    top:50px;
+}
+.sock2{
+    right:10px;
+    top:50px;
+}
+.shoes{
+    width:150px;
+    height: 150px;
+    position:relative;
+    top:0px;
+    left:675px;
+}
+.shoe1,.shoe2{
+    position:absolute;
+    top:0px;
+    background-color: blueviolet;
+    width:50px;
+    height: 30px;
+    border:1px solid black;
+    border-radius: 10px;
+}
+.shoe1{
+    left:10px;
+    top:0px;
+}
+.shoe2{
+    right:10px;
+    top:0px;
+}
+.hand1{
+    width:150px;
+    height: 50px;
+    background-color: wheat;
+    position:relative;
+    top:-500px;
+    left:525px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.rectanglehand1{
+    position:absolute;
+    right:0px;
+    width:50px;
+    height: 50px;
+    background-color: aqua;
+}
+.palm{
+    position:absolute;
+    left:0px;
+    width:50px;
+    height:50px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.hand2{
+    width:150px;
+    height: 50px;
+    background-color: wheat;
+    position:relative;
+    top:-550px;
+    left:825px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.rectanglehand2{
+    position:absolute;
+    right:0px;
+    width:50px;
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.palm2{
+    position:absolute;
+    left:0px;
+    width:50px;
+    height:50px;
+    background-color: aqua;
+}

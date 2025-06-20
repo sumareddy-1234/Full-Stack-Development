@@ -1,0 +1,36 @@
+.para-1{
+    text-transform: lowercase;
+}
+.para-2{
+    text-transform: uppercase;
+}
+.para-3{
+    text-transform: capitalize;
+}
+.letter1{
+    letter-spacing: 4px;
+}
+.word1{
+    word-spacing: 10px;
+}
+.line1{
+    line-height: 40px;
+}
+.text1{
+    text-indent: 40px;
+}
+.shadow1{
+    text-shadow: 2px 2px red;
+}
+.shadow2{
+    text-shadow: 0px 5px green;
+}
+.shadow3{
+    text-shadow: 1px 2px #0000ff;
+}
+.shadow4{
+    text-shadow: 1px 2px 5px palevioletred;
+}
+.shadow5{
+    text-shadow: -2px 0px red;
+}

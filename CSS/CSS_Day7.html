@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Positions</title>
+        <style>
+            .parent1{
+                width: 100%;
+                height:300px;
+                background-color: blueviolet;
+            }
+            .parent2{
+                width: 100%;
+                height:300px;
+                background-color: rgb(12, 236, 79);
+                position:relative;
+            }
+            .child1{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                position:relative;
+                top:-70px;
+                left:200px;
+            }
+            .child2{
+                width:100px;
+                height:100px;
+                background-color: rgb(234, 156, 12);
+                position: absolute;
+                top:0px;
+                right:0px;
+            }
+
+            .parent3{
+                width: 100%;
+                height: 300px;
+                background-color: rgb(232, 7, 179);
+            }
+            .child3{
+                width:100px;
+                height:100px;
+                background-color: #ff0000;
+                position:fixed;
+                right:30px;
+                bottom:30px;
+            }
+            .parent4{
+                width:100%;
+                height:100px;
+                background-color:sandybrown;
+                border:3px solid black;
+                position:sticky;
+                top:30px;
+                z-index: 1;
+            }
+            .box1 {
+                width: 200px;
+                height: 100px;
+                background-color: lightblue;
+                position: static; /* This is actually the default */
+            }
+
+            .box2 {
+                width: 200px;
+                height: 100px;
+                background-color: lightcoral;
+                position: static;
+                top: 20px;  /* This will have NO effect */
+                left: 30px; /* This will have NO effect */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent4">
+            <h2>sticky</h2>
+        </div>
+        <div class="parent1">
+
+        </div>
+        <div class="parent2">
+            <div class="child1">
+                <h2>relative</h2>
+            </div>
+            <div class="child2">
+                <h2>absolute</h2>
+            </div>
+        </div>
+        <div class="parent3">
+            <div class="child3">
+                <h2>fixed</h2>
+            </div>
+        </div>
+        <div class="box1">Box 1 (static)</div>
+        <div class="box2">Box 2 (static - top/left ignored)</div>
+    </body>
+</html>

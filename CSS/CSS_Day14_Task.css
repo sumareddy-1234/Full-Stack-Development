@@ -1,0 +1,250 @@
+.calculator{
+    width:325px;
+    height:495px;
+    background-color:rgb(244, 57, 57);
+    position: relative;
+    box-shadow: 0px 0px 3px 10px black;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/background.jpg);
+}
+.number-plate{
+    width:300px;
+    height:50px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    box-shadow: 0px 0px 5px 3px whitesmoke;
+    border-radius: 10px;
+    font-family: 'Digital Numbers', sans-serif;
+    text-align: right;
+}
+.numbers{
+    background-color: red;
+    position: relative;
+    width: 300px;
+    height: 395px;
+    top:85px;
+    left:12px;
+    box-shadow: 0px 0px 5px 3px aliceblue;
+    font-size: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.number1,.number2,.number3,.number4,.number5,.number6,.number7,.number8,.number9,.number10,.number11,.number12,.number13,.number14,.number15,.number16,.number17,.number18,.number19,.number20,.number21,.number22,.number23,.number24{
+    width:60px;
+    height:50px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.number1{
+    top:5px;
+    left:5px;
+}
+.number2{
+    top:5px;
+    left:85px;
+}
+.number3{
+    top:5px;
+    left:160px;
+}
+.number4{
+    top:5px;
+    right:5px;
+}
+.number5{
+    top:70px;
+    left:5px;
+}
+.number6{
+    top:70px;
+    left:85px;
+}
+.number7{
+    top:70px;
+    left:160px;
+}
+.number8{
+    top:70px;
+    right:5px;
+}
+.number9{
+    top:135px;
+    left:5px;
+}
+.number10{
+    top:135px;
+    left:85px;
+}
+.number11{
+    top:135px;
+    left:160px;
+}
+.number12{
+    top:135px;
+     right:5px;
+}
+.number13{
+    top:200px;
+    left:5px;
+}
+.number14{
+    top:200px;
+    left:85px;
+}
+.number15{
+    top:200px;
+    left:160px;
+}
+.number16{
+    top:200px;
+    right:5px;
+}
+.number17{
+    top:265px;
+    left:5px;
+}
+.number18{
+    top:265px;
+    left:85px;
+}
+.number19{
+    top:265px;
+    left:160px;
+}
+.number20{
+    top:265px;
+    right:5px;
+}
+.number21{
+    bottom:15px;
+    left:5px;
+}
+.number22{
+    bottom:15px;
+    left:85px;
+}
+.number23{
+    bottom:15px;
+    left:160px;
+}
+.number24{
+    bottom:15px;
+    right:5px;
+}
+.number1:active{
+    background-color: skyblue;
+}
+.number2:active{
+    background-color: skyblue;
+}
+.number3:active{
+    background-color: skyblue;
+}
+.number4:active{
+    background-color: skyblue;
+}
+.number5:active{
+    background-color: skyblue;
+}
+.number6:active{
+    background-color: skyblue;
+}
+.number7:active{
+    background-color: skyblue;
+}
+.number8:active{
+    background-color: skyblue;
+}
+.number9:active{
+    background-color: skyblue;
+}
+.number10:active{
+    background-color: skyblue;
+}
+.number11:active{
+    background-color: skyblue;
+}
+.number12:active{
+    background-color: skyblue;
+}
+.number13:active{
+    background-color: skyblue;
+}
+.number14:active{
+    background-color: skyblue;
+}
+.number15:active{
+    background-color: skyblue;
+}
+.number16:active{
+    background-color: skyblue;
+}
+.number17:active{
+    background-color: skyblue;
+}
+.number18:active{
+    background-color: skyblue;
+}
+.number19:active{
+    background-color: skyblue;
+}
+.number10:active{
+    background-color: skyblue;
+}
+.number11:active{
+    background-color: skyblue;
+}
+.number12:active{
+    background-color: skyblue;
+}
+.number13:active{
+    background-color: skyblue;
+}
+.number14:active{
+    background-color: skyblue;
+}
+.number15:active{
+    background-color: skyblue;
+}
+.number16:active{
+    background-color: skyblue;
+}
+.number17:active{
+    background-color: skyblue;
+}
+.number18:active{
+    background-color: skyblue;
+}
+.number19:active{
+    background-color: skyblue;
+}
+.number20:active{
+    background-color: skyblue;
+}
+.number21:active{
+    background-color: skyblue;
+}
+.number22:active{
+    background-color: skyblue;
+}
+.number23:active{
+    background-color: skyblue;
+}
+.number24:active{
+    background-color: skyblue;
+}
+.number-plate:hover{
+    background-color: lightcyan;
+    border-radius: 0px;
+}

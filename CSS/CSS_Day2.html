@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Selectors</title>
+        <!--Internal CSS-->
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            #header{
+                color:pink;
+            }
+            .myheading{
+                background-color: aqua;
+                color: blueviolet;
+            }
+            .mypara{
+                color: blue;
+            }
+            .myimage{
+                height: 100;
+                width:100;
+                border: 30px solid aqua;
+                background-color: blueviolet;
+            }
+            h2,b,i,p, .group{
+                color: greenyellow;
+            }
+            div .child span{
+                color: red;
+            }
+            .container p{
+                color: green;
+            }
+            .parent .innerchild span{
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="header">My page</h1>
+        <h1 class="myheading">My paper</h1>
+        <p class="mypara">technical hub</p>
+        <div>
+            <img class="myimage"   src="./images/profile pic.jpg" alt="my pic"/>
+        </div>
+        <div>
+            <img class="myimage"    src="./images/Teddy.jpg" alt="my pic"/>
+        </div>
+        <div class="myimage">
+            <p>This is my image</p>
+        </div>
+        <b>Important</b>
+        <h2>Class</h2>
+        <i class="group">will be continued</i>
+        <div>
+            <h1>nested selector</h1>
+            <p class="child">
+                <span>This is inner child and first example of nested selector</span>
+            </p>
+        </div>
+        <div class="container">
+            <p>second example of nested selector</p>
+        </div>
+        <div class="parent">
+            <p class="innerchild">
+                <span>Third example of nested selector</span>
+            </p>
+    </body>
+</html>

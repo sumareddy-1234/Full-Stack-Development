@@ -1,0 +1,38 @@
+.profiles{
+    width:100%;
+    border: 3px solid black;
+    background-color: darkcyan;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.profile1,.profile2,.profile3,.profile4,.profile5,.profile6,.profile7,.profile8{
+    width:380px;
+    height: 380px;
+    background-color: lightpink;
+    border: 3px solid black;
+    margin-bottom: 30px;
+    position: relative;
+}
+.profile-pic1,.profile-pic2,.profile-pic3,.profile-pic4,.profile-pic5,.profile-pic6,.profile-pic7,.profile-pic8{
+    position: absolute;
+    top:2px;
+    left:140px;
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    background-color: aqua;
+    z-index:1;
+}
+.profile-info1,.profile-info2,.profile-info3,.profile-info4,.profile-info5,.profile-info6,.profile-info7,.profile-info8{
+    position: absolute;
+    top:15%;
+    left:55px;
+    width:70%;
+    height:70%;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(129, 129, 253);
+    text-align: center;
+}
