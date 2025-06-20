@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist element</title>
+</head>
+<body>
+    <label>Choose Country:</label>
+    <input list="countries"/>
+    <datalist id="countries">
+        <option value="India">
+            <option value="Japan">
+                <option value="France">
+                    <option value="Singapore">
+                        <option value="Thailand">
+                            <option value="United Arab Emirates">
+                                <option value="United States of America">
+    </datalist>
+    <input type="submit"/>
+    <br/>
+    <br/>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="number" id="b" name="b" value="10" /> +
+  <input type="number" id="a" name="a" value="10" /> =
+  <output name="result" for="a b">20</output>
+   </form>
+
+</body>
+</html>
