@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Media QUERIES</title>
+    <style>
+        .navsection,.onphoneortablet{
+            background-color:white;
+            cursor: pointer;
+            top:0px;
+            box-shadow: 0px 0px 25px 5px whitesmoke;
+            width:100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: sticky;
+            padding: 0px 20px;
+        }
+        .parent{
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+        }
+        .child1{
+            padding:10px;
+            width:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .child2{
+            display:none;
+            position:absolute;
+            top:100%;
+        }
+        .submenu{
+            padding:5px;
+        }
+        .submenu:hover{
+            background-color: lightgreen;
+        }
+        .parent:hover .child2{
+            display: block;
+        }
+        @media(max-width:700px){
+            .navsection{
+                display: none;
+            }
+        }
+        @media(min-width:700px){
+            .onphoneortablet{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navsection">
+        <img src="./images/maya.jpg" alt="Technical Hub" height="50"/>
+        <a href="#" target="_blank" style="text-decoration-line: none;color: black;"><h3>My Maya</h3></a>
+        <a href="#" target="_blank" style="text-decoration-line: none;color: black;"><h3>Owl Code</h3></a>
+        <a href="#" target="_blank" style="text-decoration-line: none;color: black;"><h3>Apt Logic</h3></a>
+        <a href="#" target="_blank" style="text-decoration-line: none;color: black;"><h3>ATS<sup style="color: red;">New</sup></h3></a>
+        <a href="#" target="_blank" style="text-decoration-line: none;color: black;"><h3>Contact</h3></a>
+        <a href="#" target="_blank" style="text-decoration-line: none;"><h3 style="background-color: green;color: white;width: 100px;height: 50px;border-radius: 10px;text-align: center;padding-top: 10px;">Logout</h3></a>
+    </nav>
+    <div class="onphoneortablet">
+        <img src="./images/maya.jpg" alt="Technical Hub" height="50"/>
+        <div class="parent">
+            <div class="child1">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="child2">
+                <div class="submenu">
+                    <a href="#" target="_blank" style="text-decoration-line: none;color: black;"><h3>My Maya</h3></a>
+                </div>
+                <div class="submenu">
+                    <a href="#" target="_blank" style="text-decoration-line: none;color: black;"><h3>Owl Code</h3></a>
+                </div>
+                <div class="submenu">
+                    <a href="#" target="_blank" style="text-decoration-line: none;color: black;"><h3>Apt Logic</h3></a>
+                </div>
+                <div class="submenu">
+                    <a href="#" target="_blank" style="text-decoration-line: none;color: black;"><h3>ATS<sup style="color: red;">New</sup></h3></a>
+                </div>
+                <div class="submenu">
+                    <a href="#" target="_blank" style="text-decoration-line: none;color: black;"><h3>Contact</h3></a>
+                </div>
+                <div class="submenu">
+                    <a href="#" target="_blank" style="text-decoration-line: none;"><h3 style="background-color: green;color: white;width: 100px;height: 50px;border-radius: 10px;text-align: center;">Logout</h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
