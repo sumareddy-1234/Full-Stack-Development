@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubix Cube</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height:100svh;
+        }
+        @keyframes myanimation{
+            100%{
+                transform:rotateX(360deg) rotateY(360deg);
+            }
+        }
+        .cube{
+            width:200px;
+            height:200px;
+            transform-style:preserve-3d;
+            animation: myanimation 6s infinite linear;
+            position:relative;
+        }
+        .cube div{
+            opacity:1;
+            border:3px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        .left{
+            position: absolute;
+            width:200px;
+            height:200px;
+            background-color: red;
+            transform:rotateY(90deg) translateZ(100px);
+        }
+        .right{
+            position: absolute;
+            width:200px;
+            height:200px;
+            background-color: darkgreen;
+            transform:rotateY(90deg) translateZ(-100px);
+        }
+        .top{
+            position: absolute;
+            width:200px;
+            height:200px;
+            background-color: blue;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .bottom{
+            position: absolute;
+            width:200px;
+            height:200px;
+            background-color: white;
+            transform: rotateX(90deg) translateZ(-100px);
+        }
+        .front{
+            position: absolute;
+            width:200px;
+            height:200px;
+            background-color: orange;
+            transform: translateZ(100px);
+        }
+        .back{
+            position: absolute;
+            width:200px;
+            height:200px;
+            background-color: yellow;
+            transform: translateZ(-100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div class="left">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="right">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="bottom">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="top">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="front">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="back">
+             <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+</body>
+</html>
