@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>pseudo elements</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100svh;
+            }
+            .demo{
+                position:relative;
+                z-index:1;
+                overflow: hidden;
+                border: 2px solid black;
+                box-shadow: -5px -5px 0px 0px blue;
+            }
+            .demo::before{
+                position:absolute;
+                content:"";
+                width:100%;
+                height: 100%;
+                background-image: linear-gradient(to top left,orange,transparent,green);
+                transition: transform .5s linear;
+                transform: translateX(-190px) skew(120deg);
+            }
+            .demo:hover::before{
+                transform:translateX(0px);
+                z-index:-1;
+            }
+            .demo:hover{
+                box-shadow: 5px 5px 0px 0px blue;
+            }
+            .demo2{
+                position:relative;
+                z-index:1;
+                overflow: hidden;
+                color: white;
+                background-color: black;
+
+            }
+            .demo2::after{
+                position:absolute;
+                content:"";
+                width:100%;
+                height:100%;
+                transition: transform .5s linear;
+            }
+            .demo2:hover::after{
+                background-image: linear-gradient(to top left,orange,blue,green);
+                transform: translateY(-80px);
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="demo">
+            <h1>Click me</h1>
+        </div>
+        <br>
+        <div class="demo2">
+            <h1>Click me</h1>
+        </div>
+    </body>
+</html>
