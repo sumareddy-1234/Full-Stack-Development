@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <head>
+            <title>Animations revision</title>
+        </head>
+        <style>
+            .demo1{
+                width:200px;
+                height:200px;
+                background-color: blue;
+                animation-name: myanimation;
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-delay: 1s;
+            }
+            @keyframes myanimation{
+                to{
+                    background-color: green;
+                }
+            }
+            .demo2{
+                margin: 10px;
+                width:150px;
+                height:150px;
+                background-color: red;
+                position: relative;
+                animation: movement 5s ease-in 20 reverse;
+            }
+            @keyframes movement{
+                from{
+                    left:0px;
+                }
+                to{
+                    left:200px;
+                }
+            }
+            .demo3{
+                margin: 10px;
+                width:150px;
+                height:150px;
+                background-color: red;
+                position: relative;
+                animation: movement2 5s ease-out 20 alternate-reverse;
+            }
+            @keyframes movement2{
+                0%{
+                    left:200px;
+                }
+                100%{
+                    left:0px;
+                    background-color: greenyellow;
+                }
+            }
+            .demo4{
+                margin: 10px;
+                width:100px;
+                height:100px;
+                background-color: red;
+                border-radius:50%;
+                position:relative;
+                left:200px;
+                animation:shine 5s ease-in-out 2s infinite alternate;
+            }
+            @keyframes shine{
+                0%{
+                    box-shadow: 0px 0px 5px 5px orange;
+                }
+                50%{
+                    box-shadow: 0px 0px 5px 10px orangered;
+                }
+                100%{
+                    box-shadow: 0px 0px 5px 20px orange;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="demo1"></div>
+        <div class="demo2"></div>
+        <div class="demo3"></div>
+        <div class="demo4"></div>
+    </body>
+</html>
