@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datatypes conversion,input and output operations</title>
+    <script>
+        x=window.prompt("Enter a number");
+        z=parseInt(x);
+        console.log("The number is",z,"and type of number after converting it into integer is",typeof(z));
+        f=parseFloat(x);
+        console.log("The number is",f,"and type of number after converting it into float is",typeof(f));
+        y=Math.floor(Math.random()*1000);
+        y=y%200
+        y=y<100?y+100:y;        
+        console.log("random number is",y);
+        let c;
+        c=10;
+        console.log("c =",c);
+        num1=2;
+        num2="2";
+        console.log(num1==num2);
+        console.log(num1!=num2);
+        console.log(num1===num2);
+        console.log(num1!==num2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>   
