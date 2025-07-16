@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object and date</title>
+    <script>
+        d={100:2,'thub':3,"start":function(){
+            console.log("responding");
+        }};
+        console.log(d[100]);
+        console.log(d["thub"]);
+        console.log(d["start"]);
+        console.log(Object.keys(d));
+        console.log(Object.values(d));
+        console.log(Object.entries(d));
+        console.log(Object.entries(d).map(ele=>{
+            console.log("key:",ele[0],"value:",ele[1]);
+        }))
+        d=new Date();
+        console.log(d);
+        console.log(d.getDate());
+        s=" Sumaa ";
+        console.log(s.toUpperCase());
+        console.log(s.toLowerCase());
+        console.log(s.indexOf("a"));
+        console.log(s.lastIndexOf("a"));
+        console.log(s.replace("a","o"));
+        console.log(s.replaceAll("a","o"));
+        console.log(s.trim());
+        console.log(s.split(","))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
