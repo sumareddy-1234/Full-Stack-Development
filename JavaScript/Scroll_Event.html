@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scroll Event</title>
+  <style>
+    .child {
+      width: 100%;
+      height: 150svh; /* Makes page scrollable */
+      background: linear-gradient(to bottom, lightblue, lightcoral);
+    }
+  </style>
+  <script>
+    // This will log the full event object in the console on scroll
+    window.onscroll = function (event) {
+      console.log("Scroll Event:", event); // Full event object
+    };
+  </script>
+</head>
+<body>
+  <div class="child"></div>
+</body>
+</html>
