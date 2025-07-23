@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Retrieve functions</title>
+</head>
+<body>
+    <p>paragraph-1</p>
+    <p>Paragraph-2</p>
+    <div class="demo">div-tag</div>
+    <span class="demo">span-tag</span>
+    <div id="demo-id">demo-id</div>
+    <div id="demo-id">demo-id2</div>
+    <script>
+        console.log(document.getElementsByTagName("p"));
+        console.log(document.getElementsByClassName("demo"));
+        console.log(document.getElementsByClassName("demo")[0].innerText);
+        console.log(document.getElementById("demo-id"));
+        console.log(document.querySelector(".demo"));
+        console.log(document.querySelectorAll(".demo"));
+        console.log(document.querySelector("#demo-id"));
+        console.log(document.querySelectorAll("#demo-id"));
+        console.log(document.querySelector("p"));
+        console.log(document.querySelectorAll("p"));
+        console.log(document.querySelectorAll("p")[0]);
+    </script>
+</body>
+</html>
