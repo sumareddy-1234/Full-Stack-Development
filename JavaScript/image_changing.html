@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changing one image to another image using DOM Updation Functions</title>
+    <style>
+        .myimage1{
+            height: 300px;
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+    <img class="myimage1" src="./university_logo.png"/>
+    <button onclick="fun()">Click here to change image</button>
+</body>
+<script>
+    function fun(){
+        console.log(document.getElementsByTagName("img")[0].src="./Screenshot 2025-06-20 095015.png");
+    }
+</script>
+</html>
