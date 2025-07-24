@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideSwipeMenu</title>
+    <link rel="stylesheet" href="./demo.css"/>
+</head>
+<body>
+    <div style="color:white;font-size: 20px;margin: 22px;" onclick="Opened()">&#9776;</div>
+    <div class="mobile-options">
+        <span onclick="Closed()">&times;</span>
+        <div>Home</div>
+        <div>About</div>
+        <div>Services</div>
+        <div>Pricings</div>
+        <div>Contact</div>
+    </div>
+    <script>
+        function Closed(){
+            document.getElementsByClassName("mobile-options")[0].style="left:-245px;"
+        }
+        function Opened(){
+            document.getElementsByClassName("mobile-options")[0].style="left:0px;"
+        }
+    </script>
+</body>
+</html>

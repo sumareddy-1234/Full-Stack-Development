@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+.mobile-options{
+    background-color: blueviolet;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:200px;
+    height:100svh;
+    border:2px solid red;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    align-items: end;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    transition: left 0.5s linear;
+}
+.mobile-options div{
+    width:100%;
+    text-align: center;
+    border-bottom: 2px palevioletred solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.mobile-options div:hover{
+    background-color: aliceblue;
+    color:black;
+}
+span{
+    font-size:40px;
+    width:fit-content;
+}
