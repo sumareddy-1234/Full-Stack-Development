@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Cards using Javascript</title>
+    <link rel="stylesheet" href="./cardscreation.css"/>
+</head>
+<body>
+    <div class="parent">
+    </div>
+    <script>
+        allcards=[{
+            "image":"./algonest.jpg",
+            "price":1200,
+            "brand":"puma"
+        },
+        {
+            "image":"./algonest.jpg",
+            "price":1800,
+            "brand":"Flipkart"
+        },
+        {
+            "image":"./algonest.jpg",
+            "price":1100,
+            "brand":"Amazon"
+        },
+        {
+            "image":"./algonest.jpg",
+            "price":1500,
+            "brand":"meesho"
+        },
+        {
+            "image":"./algonest.jpg",
+            "price":1300,
+            "brand":"meesho"
+        },
+        {
+            "image":"./algonest.jpg",
+            "price":1000,
+            "brand":"meesho"
+        },
+        {
+            "image":"./algonest.jpg",
+            "price":1900,
+            "brand":"meesho"
+        },
+        {
+            "image":"./algonest.jpg",
+            "price":1800,
+            "brand":"meesho"
+        },
+        {
+            "image":"./algonest.jpg",
+            "price":2000,
+            "brand":"meesho"
+        },
+        {
+            "image":"./algonest.jpg",
+            "price":2500,
+            "brand":"meesho"
+        }]
+        let cards=allcards.map((ele)=>{
+            return(`<div class="card">
+            <div class="image-section">
+                <img src=${ele.image} />
+            </div>
+            <div class="content">
+                <div>Price:${ele.price}</div>
+                <div>brand:${ele.brand}</div>
+            </div>
+            </div>`)
+        })
+        cards=cards.join(" ");
+        parentele=document.getElementsByClassName("parent")[0];
+        parentele.innerHTML=cards;
+        console.log(cards);
+    </script>
+</body>
+</html>
