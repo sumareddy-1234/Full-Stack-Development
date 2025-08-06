@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer for 10 minutes</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:100svh;
+        }
+        .card-parent{
+            display:flex;
+            gap:10px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width:250px;
+            height:250px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        .minutes,.seconds,.colon{
+            width:50px;
+            height:50px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-parent">
+        <div class="minutes"></div>
+        <div class="colon">:</div>
+        <div class="seconds"></div>
+    </div>
+    <script>
+        var x=600;//for 10 minutes ->600 seconds
+        var interval1=setInterval(function(){
+            console.log(parseInt(x/60),":",x%60);
+            if(x==0){
+                clearInterval(interval1);
+            }
+            x=x-1;
+            document.getElementsByClassName('minutes')[0].innerText=parseInt(x/60);
+            document.getElementsByClassName('seconds')[0].innerText=x%60;
+        },1000);
+        
+    </script>
+</body>
+</html>

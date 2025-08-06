@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>returns Functions progess using promises</title>
+</head>
+<body>
+<script>
+        function fun1(){
+            return new Promise(function(resolved){
+                setTimeout(function(){
+                    resolved(1);
+                }, 1000);
+            })
+        }
+        function fun2    (value){
+            return new Promise(function(resolved){
+                setTimeout(function(){
+                    resolved(value+1);
+                }, 1000);
+            })
+        }
+        function fun3(value){
+            return new Promise(function(resolved){
+                setTimeout(function(){
+                    resolved(value+1);
+                }, 1000);
+            })
+        }
+        fun1().then(function(res1){
+            console.log("fun1 is completed",res1);
+            fun2(res1).then(function(res2){
+                console.log("fun2 is completed",res2);
+                fun3(res2).then(function(res3){
+                    console.log("fun3 is completed","Result is:",res3);
+                })
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Eligibility</title>
+</head>
+<body>
+    <script>
+        //promises helps to execute the dependent tasks in asynchronuous manner
+        //the promises is used to monitor the previous monitor and returns the progress of the previous promise as completed,not completed or error.
+        //by default promises has try and catch mechanism. 
+        const fun=new Promise(function(resolve,reject){
+            let x=18;
+            if(x>=18){
+                resolve("Eligible to vote");
+            }
+            else{
+                reject("Not Eligible to vote");
+            }
+        })
+        fun.then(function(result){
+            console.log(result);
+        })
+        .catch(function(err){
+            console.log(err);
+        })
+    </script>
+</body>
+</html>
