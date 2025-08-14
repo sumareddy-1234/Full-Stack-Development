@@ -1,0 +1,10 @@
+.learn{
+    color:green;
+}
+.circle{
+    width:200px;
+    height:200px;
+    border: solid blue 1px;
+    border-radius: 50%;
+    padding:10px;
+}
