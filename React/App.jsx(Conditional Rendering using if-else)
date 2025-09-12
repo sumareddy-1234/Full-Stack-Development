@@ -1,0 +1,24 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import FunctionParameters from './FunctionParameters'
+import DynamicCards from './DynamicCards'
+import Component1 from './component1'
+import Component2 from './Component2'
+
+function App() {
+  var x=false;
+      if(x==true){
+        return(
+          <Component1/>
+        );
+      }
+      else{
+        return(
+          <Component2/>
+        );
+      }
+}
+
+export default App;
