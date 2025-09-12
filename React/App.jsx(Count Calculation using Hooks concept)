@@ -1,0 +1,26 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import FunctionParameters from './FunctionParameters'
+import DynamicCards from './DynamicCards'
+import Component1 from './component1'
+import Component2 from './Component2'
+
+function App() {
+  const [Data,setData]=useState(0);
+  var x=0;
+  const change=()=>{
+    setData(Data+1);
+  }
+
+
+  return (
+    <>
+      <button onClick={change}>Click Here</button>
+      <h1>count:{Data}</h1>
+    </>
+  );
+}
+
+export default App;
