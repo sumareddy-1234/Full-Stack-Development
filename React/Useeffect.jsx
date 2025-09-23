@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Useeffect = () => {
-  const [x, setX] = useState(0);  // ✅ Hook must be outside return
+  const [x, setX] = useState(0); 
 
   useEffect(() => {
     console.log("executed");
@@ -16,3 +16,4 @@ const Useeffect = () => {
 };
 
 export default Useeffect;
+
