@@ -13,4 +13,13 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid green;
+    text-align: center;
+    font-size: 20px;
 }
