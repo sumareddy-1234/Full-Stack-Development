@@ -1,0 +1,13 @@
+import React from "react";
+const change=()=>{
+    window.location.href="/";
+}   
+const Component2=()=>{
+    return(
+        <>
+        <h1>Services Page</h1>
+        <button onClick={change}>Go to Home</button>
+        </>
+    );
+};
+export default Component2;
