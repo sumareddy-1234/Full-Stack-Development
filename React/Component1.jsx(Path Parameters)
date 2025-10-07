@@ -1,0 +1,11 @@
+import React from "react";
+import { Link } from "react-router-dom";
+const Component1=()=>{
+    return(
+        <>
+        <h1>Home</h1>
+        <Link to="/services/100"> Go to services </Link>
+        </>
+    );
+};
+export default Component1;
