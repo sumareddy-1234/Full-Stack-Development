@@ -1,0 +1,12 @@
+import React from "react";
+import { useParams } from "react-router-dom";
+
+const Component2=()=>{
+    var ReceivedData=useParams()
+    console.log(ReceivedData);
+    return(
+        <h1>Services Page</h1>
+    );
+    
+};
+export default Component2;
