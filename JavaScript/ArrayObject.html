@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Object Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f8ff;
+      margin-top: 50px;
+    }
+    button {
+      margin: 8px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1e7e34;
+    }
+    #output {
+      margin-top: 25px;
+      background-color: #e0f7fa;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: left;
+      min-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Array Object Example</h1>
+  <button onclick="showArray()">Show Array</button>
+  <button onclick="addElement()">Push Element</button>
+  <button onclick="removeElement()">Pop Element</button>
+  <button onclick="sortArray()">Sort</button>
+  <button onclick="reverseArray()">Reverse</button>
+  <button onclick="findIndex()">Find Index</button>
+
+  <div id="output"></div>
+
+  <script>
+    // Initialize an array
+    let fruits = ["Apple", "Banana", "Cherry", "Mango"];
+
+    // Display the array
+    function showArray() {
+      document.getElementById("output").innerHTML =
+        "<b>Fruits Array:</b> " + fruits.join(", ") +
+        "<br><b>Length:</b> " + fruits.length;
+    }
+
+    // Add a new element at the end (push)
+    function addElement() {
+      let fruit = prompt("Enter a fruit to add:");
+      if (fruit) {
+        fruits.push(fruit);
+        showArray();
+      }
+    }
+
+    // Remove the last element (pop)
+    function removeElement() {
+      let removed = fruits.pop();
+      alert("Removed: " + removed);
+      showArray();
+    }
+
+    // Sort the array alphabetically
+    function sortArray() {
+      fruits.sort();
+      showArray();
+    }
+
+    // Reverse the array
+    function reverseArray() {
+      fruits.reverse();
+      showArray();
+    }
+
+    // Find index of a specific element
+    function findIndex() {
+      let item = prompt("Enter a fruit to find its index:");
+      let index = fruits.indexOf(item);
+      if (index !== -1) {
+        alert(item + " found at position " + index);
+      } else {
+        alert(item + " not found in the array.");
+      }
+    }
+
+    // Display initial array on page load
+    showArray();
+  </script>
+</body>
+</html>
+
+
