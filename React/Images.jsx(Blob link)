@@ -1,0 +1,22 @@
+import React from "react";
+import { useState } from "react";
+
+const Images=()=>{
+    const [ImagePath,setImagePath]=useState(null)
+    const GetData=(event)=>{
+        const file=event.target.files[0]
+        console.log(file);
+        const path=URL.createObjectURL(file)
+        setImagePath(path)
+
+    }
+    return(
+        <>
+        <input type="file" onChange={(event)=>GetData(event)}/>
+        {
+            ImagePath!=null?<img src={ImagePath} alt="Image Cracked"/>:<></>
+        }
+        </>
+    )
+}
+export default Images;
