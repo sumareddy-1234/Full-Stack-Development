@@ -1,0 +1,86 @@
+Write a program using window object properties and methods.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Object Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Window Object Example</h1>
+
+  <button onclick="showAlert()">Show Alert</button>
+  <button onclick="getUserName()">Prompt for Name</button>
+  <button onclick="openNewWindow()">Open New Window</button>
+  <button onclick="closeNewWindow()">Close New Window</button>
+  <button onclick="showWindowSize()">Show Window Size</button>
+
+  <p id="output"></p>
+
+  <script>
+    let newWin; // variable to hold reference to new window
+
+    // 1. Alert box using window.alert()
+    function showAlert() {
+      window.alert("This is an alert from the window object!");
+    }
+
+    // 2. Prompt box using window.prompt()
+    function getUserName() {
+      let name = window.prompt("Enter your name:");
+      if (name) {
+        document.getElementById("output").innerHTML = "Hello, " + name + "!";
+      } else {
+        document.getElementById("output").innerHTML = "You didn’t enter a name.";
+      }
+    }
+
+    // 3. Open a new window using window.open()
+    function openNewWindow() {
+      newWin = window.open(
+        "https://www.example.com",
+        "_blank",
+        "width=400,height=300"
+      );
+    }
+
+    // 4. Close the new window using window.close()
+    function closeNewWindow() {
+      if (newWin && !newWin.closed) {
+        newWin.close();
+      } else {
+        alert("No window is open to close!");
+      }
+    }
+
+    // 5. Display window size using window.innerWidth and window.innerHeight
+    function showWindowSize() {
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+      document.getElementById("output").innerHTML =
+        "Window Size: " + width + " x " + height + " pixels.";
+    }
+  </script>
+</body>
+</html>
+
+
