@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Object Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+      margin-top: 40px;
+    }
+    button {
+      margin: 8px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #output {
+      margin-top: 25px;
+      background-color: #e3f2fd;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: left;
+      min-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript String Object Example</h1>
+
+  <button onclick="showLength()">Length</button>
+  <button onclick="toUpper()">Uppercase</button>
+  <button onclick="toLower()">Lowercase</button>
+  <button onclick="findChar()">Character at Position</button>
+  <button onclick="findIndex()">Index of Word</button>
+  <button onclick="extractSubstring()">Substring</button>
+  <button onclick="replaceWord()">Replace Word</button>
+  <button onclick="splitString()">Split String</button>
+  <button onclick="trimSpaces()">Trim Spaces</button>
+
+  <div id="output"></div>
+
+  <script>
+    // Sample string
+    let text = "  JavaScript is Fun to Learn!  ";
+
+    // Display string length
+    function showLength() {
+      document.getElementById("output").innerHTML = 
+        `<b>String:</b> "${text}"<br>
+         Length: ${text.length}`;
+    }
+
+    // Convert to uppercase
+    function toUpper() {
+      document.getElementById("output").innerHTML = 
+        `Uppercase: ${text.toUpperCase()}`;
+    }
+
+    // Convert to lowercase
+    function toLower() {
+      document.getElementById("output").innerHTML = 
+        `Lowercase: ${text.toLowerCase()}`;
+    }
+
+    // Find character at specific position
+    function findChar() {
+      let pos = prompt("Enter position number (0-based index):");
+      if (pos !== null && pos < text.length) {
+        document.getElementById("output").innerHTML = 
+          `Character at position ${pos}: "${text.charAt(pos)}"`;
+      } else {
+        alert("Invalid position!");
+      }
+    }
+
+    // Find index of a word
+    function findIndex() {
+      let word = prompt("Enter a word to find:");
+      let index = text.indexOf(word);
+      if (index !== -1) {
+        document.getElementById("output").innerHTML = 
+          `"${word}" found at position ${index}`;
+      } else {
+        document.getElementById("output").innerHTML = 
+          `"${word}" not found in the string.`;
+      }
+    }
+
+    // Extract substring
+    function extractSubstring() {
+      document.getElementById("output").innerHTML = 
+        `Substring (0–10): "${text.substring(0, 10)}"`;
+    }
+
+    // Replace a word
+    function replaceWord() {
+      let newText = text.replace("Fun", "Awesome");
+      document.getElementById("output").innerHTML = 
+        `After replace: ${newText}`;
+    }
+
+    // Split the string into words
+    function splitString() {
+      let words = text.trim().split(" ");
+      document.getElementById("output").innerHTML = 
+        `<b>Words:</b> ${words.join(", ")}`;
+    }
+
+    // Trim spaces
+    function trimSpaces() {
+      document.getElementById("output").innerHTML = 
+        `Original: "${text}"<br>Trimmed: "${text.trim()}"`;
+    }
+  </script>
+</body>
+</html>
+
+
