@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Object Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+      margin-top: 40px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #output {
+      margin-top: 25px;
+      background-color: #e3f2fd;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: left;
+      min-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Math Object Example</h1>
+
+  <button onclick="showConstants()">Show Constants</button>
+  <button onclick="calculateSquareRoot()">Square Root</button>
+  <button onclick="calculatePower()">Power</button>
+  <button onclick="roundNumbers()">Rounding Methods</button>
+  <button onclick="findMinMax()">Find Min/Max</button>
+  <button onclick="generateRandom()">Random Number</button>
+
+  <div id="output"></div>
+
+  <script>
+    // Display Math constants
+    function showConstants() {
+      document.getElementById("output").innerHTML = `
+        <b>Math Constants:</b><br>
+        Math.PI = ${Math.PI}<br>
+        Math.E = ${Math.E}<br>
+        Math.SQRT2 = ${Math.SQRT2}<br>
+      `;
+    }
+
+    // Calculate square root
+    function calculateSquareRoot() {
+      let num = prompt("Enter a number:");
+      if (num !== null) {
+        document.getElementById("output").innerHTML =
+          `Square root of ${num} = ${Math.sqrt(num)}`;
+      }
+    }
+
+    // Calculate power
+    function calculatePower() {
+      let base = prompt("Enter base number:");
+      let exp = prompt("Enter exponent:");
+      if (base !== null && exp !== null) {
+        document.getElementById("output").innerHTML =
+          `${base} raised to power ${exp} = ${Math.pow(base, exp)}`;
+      }
+    }
+
+    // Demonstrate rounding methods
+    function roundNumbers() {
+      let num = 12.67;
+      document.getElementById("output").innerHTML = `
+        <b>Number:</b> ${num}<br>
+        Math.round(${num}) = ${Math.round(num)}<br>
+        Math.floor(${num}) = ${Math.floor(num)}<br>
+        Math.ceil(${num}) = ${Math.ceil(num)}<br>
+      `;
+    }
+
+    // Find minimum and maximum values
+    function findMinMax() {
+      let values = [5, 10, -3, 42, 8];
+      document.getElementById("output").innerHTML = `
+        <b>Array:</b> [${values.join(", ")}]<br>
+        Math.max(...) = ${Math.max(...values)}<br>
+        Math.min(...) = ${Math.min(...values)}<br>
+      `;
+    }
+
+    // Generate a random number
+    function generateRandom() {
+      let randomNum = Math.random(); // between 0 and 1
+      let randomInt = Math.floor(Math.random() * 100) + 1; // between 1 and 100
+      document.getElementById("output").innerHTML = `
+        Math.random() = ${randomNum}<br>
+        Random integer (1–100) = ${randomInt}<br>
+      `;
+    }
+  </script>
+</body>
+</html>
+
+
