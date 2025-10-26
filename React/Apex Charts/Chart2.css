@@ -1,0 +1,111 @@
+/* Chart2.css */
+
+/* Overall dashboard layout */
+.dashboard {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  padding: 1rem;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Header section */
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.dashboard-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+  color: #222;
+}
+.dashboard-header p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Stats cards */
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.stats-cards .card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.stats-cards .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+.stats-cards .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  color: #008FFB;
+}
+.stats-cards .card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Charts grid layout */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+/* Individual chart box */
+.chart-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.chart-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Chart titles inside apexcharts */
+.apexcharts-title-text {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #222 !important;
+}
+
+/* Scrollable horizontal chart section (optional) */
+.charts-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+.charts-scroll .chart-box {
+  flex: 0 0 400px; /* fixed width */
+}
+
+/* Tooltip styling for ApexCharts */
+.apexcharts-tooltip {
+  font-size: 0.85rem !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stats-cards {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}

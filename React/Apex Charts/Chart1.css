@@ -1,0 +1,79 @@
+.dashboard {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cards-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h3 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card .percent {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #4F46E5;
+}
+
+.card span {
+  color: #666;
+  font-size: 14px;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.chart-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.chart-box.large {
+  grid-column: span 2;
+}
+
+.chart-box h4 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.chart-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+.chart-box .comments {
+  font-size: 13px;
+  color: #888;
+  margin-top: 8px;
+}
